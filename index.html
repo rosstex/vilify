@@ -15,7 +15,6 @@
         <script type="text/javascript" src="js/jq152.js"></script>
         <script type="text/javascript" src="js/jquery.js"></script>
         <script type="text/javascript" src="js/vilify.js"></script>
-        
     </head>
     <body>
         <div id="links">
@@ -28,7 +27,6 @@
                 <strong>Rain:</strong> <a href="http://rainymood.com/">RainyMood.com</a><br>
                 <strong>Original Mashup Credit</strong> <a href="http://twitter.com/NickCatal">Nick Catalano</a><br>
                 <strong>Current Mashup:</strong> <a href="http://twitter.com/matt_merkle">Matt Merkle</a><br>
-                <strong>Implementer:</strong> <a href="#">Artkostm</a><br>
                 Site recreated in HTML5 with lyrics for increased SCIENCE and enjoyment. Support the artists, buy their stuff!
             </div>
         </div>
@@ -40,6 +38,8 @@
         </div>
         <div id="rain">
         	<audio id="html5audio" loop="loop" preload="auto" autoplay="autoplay" onended="this.play();" mediagroup="pg1">
+				<source src="http://rainymood.com/audio1110/0.m4a" type="audio/mp4" >
+				<source src="http://rainymood.com/audio1110/0.ogg" type="audio/ogg" >
 				Browser doesn't support audio.
 			</audio>
         </div>
@@ -51,5 +51,9 @@
                 <p></p>
             </div>
         </div>
+        <script type="text/javascript">
+        	var rainSound = document.getElementById("html5audio");
+			rainSound.volume = 0.5;
+        </script>
 	</body>
 </html>
