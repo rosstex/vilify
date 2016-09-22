@@ -28,14 +28,20 @@
                 <strong>Rain:</strong> <a href="http://rainymood.com/">RainyMood.com</a><br>
                 <strong>Original Mashup Credit</strong> <a href="http://twitter.com/NickCatal">Nick Catalano</a><br>
                 <strong>Current Mashup:</strong> <a href="http://twitter.com/matt_merkle">Matt Merkle</a><br>
+                <strong>Implementer:</strong> <a href="#">Artkostm</a><br>
                 Site recreated in HTML5 with lyrics for increased SCIENCE and enjoyment. Support the artists, buy their stuff!
             </div>
         </div>
         <div id="debug"></div>
         <div id="controls">
-            <div style="width: 0px; height: 0px;" id="jpId"><img style="width: 0px; height: 0px; display: none;" id="jp_poster_0"><audio src="res/vilifymp3.mp3" preload="metadata" id="jp_audio_0"></audio></div>
+            <div style="width: 0px; height: 0px;" id="jpId"><img style="width: 0px; height: 0px; display: none;" id="jp_poster_0"><audio src="res/vilifymp3.mp3" preload="metadata" id="jp_audio_0" mediagroup="pg1"></audio>
+		    </div>
             <a href="#"><span id="play">loading...</span></a> | <span id="time">00:00</span> | <a href="#"><span id="stop">stop</span></a>
-            
+        </div>
+        <div id="rain">
+        	<audio id="html5audio" loop="loop" preload="auto" autoplay="autoplay" onended="this.play();" mediagroup="pg1">
+				Browser doesn't support audio.
+			</audio>
         </div>
         <div id="lyricbox">
             <div id="lyrics1">
@@ -44,7 +50,6 @@
             <div id="lyrics2">
                 <p></p>
             </div>
-            
         </div>
 	</body>
 </html>
