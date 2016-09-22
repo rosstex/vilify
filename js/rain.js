@@ -13,12 +13,12 @@ jQuery(document).ready(function(){
 			document.documentElement.addEventListener(click, kickoff, true);
 		},
 		playing: function() {
-			document.getElementById("spinner").style.display="none";document.getElementById("volumeDiv").style.display="block";
+			
 		},
 		swfPath: "/js",
 		loop: true,
 		supplied: "m4a, oga",
 		preload: "none",
-		volume: 0.5
+		volume: 0.6
 	});
 });
