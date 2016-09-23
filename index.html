@@ -16,6 +16,7 @@
         <script type="text/javascript" src="js/jquery.js"></script>
         <script type="text/javascript" src="js/vilify.js"></script>
         <script type="text/javascript" src="js/rain.js"></script>
+		<script type="text/javascript" src="js/rainyday.0.1.2.min.js"></script>
     </head>
     <body>
         <div id="links">
@@ -43,6 +44,18 @@
 				Browser doesn't support audio.
 			</audio>
         </div>
+		<img id="bg"/>
+		<script> 
+			var image = document.getElementById('bg');
+				image.onload = function() {
+					var engine = new RainyDay({
+						image: this
+					});
+					engine.rain([ [0, 2, 100], [3, 3, 1] ], 200);
+				};
+				image.crossOrigin = 'anonymous';
+            	image.src = 'res/images/bg.jpg';
+		</script>
         <div id="lyricbox">
             <div id="lyrics1">
                 <p></p>
