@@ -2,8 +2,8 @@ jQuery(document).ready(function(){
 	jQuery("#rain").jPlayer({
 		ready: function() {
 			jQuery(this).jPlayer("setMedia", {
-				m4a: "http://rainymood.com/audio1110/0.m4a",
-			    oga: "http://rainymood.com/audio1110/0.ogg"
+				m4a: "https://media.rainymood.com/0.m4a",
+			    oga: "https://media.rainymood.com/0.ogg"
 			}).jPlayer("play");
 			var click = document.ontouchstart === undefined ? 'click' : 'touchstart';
 			var kickoff = function () {
